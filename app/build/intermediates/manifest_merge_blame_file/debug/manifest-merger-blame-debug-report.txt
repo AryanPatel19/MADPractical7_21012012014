@@ -1,0 +1,110 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.example.MADPractical7_21012012014"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="21"
+8-->D:\Downloads\MADPractical7_21012012014\app\src\main\AndroidManifest.xml
+9        android:targetSdkVersion="32" />
+9-->D:\Downloads\MADPractical7_21012012014\app\src\main\AndroidManifest.xml
+10
+11    <uses-permission android:name="android.permission.SCHEDULE_EXACT_ALARM" />
+11-->D:\Downloads\MADPractical7_21012012014\app\src\main\AndroidManifest.xml:4:5-78
+11-->D:\Downloads\MADPractical7_21012012014\app\src\main\AndroidManifest.xml:4:22-76
+12
+13    <application
+13-->D:\Downloads\MADPractical7_21012012014\app\src\main\AndroidManifest.xml:5:5-40:19
+14        android:allowBackup="true"
+14-->D:\Downloads\MADPractical7_21012012014\app\src\main\AndroidManifest.xml:6:9-35
+15        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+15-->[androidx.core:core:1.8.0] C:\Users\aryan\.gradle\caches\transforms-3\cbd2cea7a41c8b4414f86c37a63fa3c1\transformed\core-1.8.0\AndroidManifest.xml:24:18-86
+16        android:dataExtractionRules="@xml/data_extraction_rules"
+16-->D:\Downloads\MADPractical7_21012012014\app\src\main\AndroidManifest.xml:7:9-65
+17        android:debuggable="true"
+18        android:fullBackupContent="@xml/backup_rules"
+18-->D:\Downloads\MADPractical7_21012012014\app\src\main\AndroidManifest.xml:8:9-54
+19        android:icon="@mipmap/ic_launcher"
+19-->D:\Downloads\MADPractical7_21012012014\app\src\main\AndroidManifest.xml:9:9-43
+20        android:label="@string/app_name"
+20-->D:\Downloads\MADPractical7_21012012014\app\src\main\AndroidManifest.xml:10:9-41
+21        android:roundIcon="@mipmap/ic_launcher_round"
+21-->D:\Downloads\MADPractical7_21012012014\app\src\main\AndroidManifest.xml:11:9-54
+22        android:supportsRtl="true"
+22-->D:\Downloads\MADPractical7_21012012014\app\src\main\AndroidManifest.xml:12:9-35
+23        android:testOnly="true"
+24        android:theme="@style/Theme.MADPractical7_21012012014" >
+24-->D:\Downloads\MADPractical7_21012012014\app\src\main\AndroidManifest.xml:13:9-63
+25        <service
+25-->D:\Downloads\MADPractical7_21012012014\app\src\main\AndroidManifest.xml:15:9-18:38
+26            android:name="com.example.MADPractical7_21012012014.AlarmService"
+26-->D:\Downloads\MADPractical7_21012012014\app\src\main\AndroidManifest.xml:16:13-78
+27            android:enabled="true"
+27-->D:\Downloads\MADPractical7_21012012014\app\src\main\AndroidManifest.xml:17:13-35
+28            android:exported="true" />
+28-->D:\Downloads\MADPractical7_21012012014\app\src\main\AndroidManifest.xml:18:13-36
+29
+30        <receiver
+30-->D:\Downloads\MADPractical7_21012012014\app\src\main\AndroidManifest.xml:20:9-29:20
+31            android:name="com.example.MADPractical7_21012012014.AlarmBroadcastReceiver"
+31-->D:\Downloads\MADPractical7_21012012014\app\src\main\AndroidManifest.xml:21:13-88
+32            android:directBootAware="true"
+32-->D:\Downloads\MADPractical7_21012012014\app\src\main\AndroidManifest.xml:22:13-43
+33            android:enabled="true"
+33-->D:\Downloads\MADPractical7_21012012014\app\src\main\AndroidManifest.xml:23:13-35
+34            android:exported="true" >
+34-->D:\Downloads\MADPractical7_21012012014\app\src\main\AndroidManifest.xml:24:13-36
+35            <intent-filter>
+35-->D:\Downloads\MADPractical7_21012012014\app\src\main\AndroidManifest.xml:25:13-28:29
+36                <action android:name="android.intent.action.BOOT_COMPLETED" />
+36-->D:\Downloads\MADPractical7_21012012014\app\src\main\AndroidManifest.xml:26:17-78
+36-->D:\Downloads\MADPractical7_21012012014\app\src\main\AndroidManifest.xml:26:25-76
+37                <action android:name="android.intent.action.LOCKED_BOOT_COMPLETED" />
+37-->D:\Downloads\MADPractical7_21012012014\app\src\main\AndroidManifest.xml:27:17-85
+37-->D:\Downloads\MADPractical7_21012012014\app\src\main\AndroidManifest.xml:27:25-83
+38            </intent-filter>
+39        </receiver>
+40
+41        <activity
+41-->D:\Downloads\MADPractical7_21012012014\app\src\main\AndroidManifest.xml:31:9-39:20
+42            android:name="com.example.MADPractical7_21012012014.MainActivity"
+42-->D:\Downloads\MADPractical7_21012012014\app\src\main\AndroidManifest.xml:32:13-78
+43            android:exported="true" >
+43-->D:\Downloads\MADPractical7_21012012014\app\src\main\AndroidManifest.xml:33:13-36
+44            <intent-filter>
+44-->D:\Downloads\MADPractical7_21012012014\app\src\main\AndroidManifest.xml:34:13-38:29
+45                <action android:name="android.intent.action.MAIN" />
+45-->D:\Downloads\MADPractical7_21012012014\app\src\main\AndroidManifest.xml:35:17-69
+45-->D:\Downloads\MADPractical7_21012012014\app\src\main\AndroidManifest.xml:35:25-66
+46
+47                <category android:name="android.intent.category.LAUNCHER" />
+47-->D:\Downloads\MADPractical7_21012012014\app\src\main\AndroidManifest.xml:37:17-77
+47-->D:\Downloads\MADPractical7_21012012014\app\src\main\AndroidManifest.xml:37:27-74
+48            </intent-filter>
+49        </activity>
+50
+51        <provider
+51-->[androidx.emoji2:emoji2:1.2.0] C:\Users\aryan\.gradle\caches\transforms-3\b1c61a6361eb3f20cddda173d67f4de2\transformed\emoji2-1.2.0\AndroidManifest.xml:24:9-32:20
+52            android:name="androidx.startup.InitializationProvider"
+52-->[androidx.emoji2:emoji2:1.2.0] C:\Users\aryan\.gradle\caches\transforms-3\b1c61a6361eb3f20cddda173d67f4de2\transformed\emoji2-1.2.0\AndroidManifest.xml:25:13-67
+53            android:authorities="com.example.MADPractical7_21012012014.androidx-startup"
+53-->[androidx.emoji2:emoji2:1.2.0] C:\Users\aryan\.gradle\caches\transforms-3\b1c61a6361eb3f20cddda173d67f4de2\transformed\emoji2-1.2.0\AndroidManifest.xml:26:13-68
+54            android:exported="false" >
+54-->[androidx.emoji2:emoji2:1.2.0] C:\Users\aryan\.gradle\caches\transforms-3\b1c61a6361eb3f20cddda173d67f4de2\transformed\emoji2-1.2.0\AndroidManifest.xml:27:13-37
+55            <meta-data
+55-->[androidx.emoji2:emoji2:1.2.0] C:\Users\aryan\.gradle\caches\transforms-3\b1c61a6361eb3f20cddda173d67f4de2\transformed\emoji2-1.2.0\AndroidManifest.xml:29:13-31:52
+56                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+56-->[androidx.emoji2:emoji2:1.2.0] C:\Users\aryan\.gradle\caches\transforms-3\b1c61a6361eb3f20cddda173d67f4de2\transformed\emoji2-1.2.0\AndroidManifest.xml:30:17-75
+57                android:value="androidx.startup" />
+57-->[androidx.emoji2:emoji2:1.2.0] C:\Users\aryan\.gradle\caches\transforms-3\b1c61a6361eb3f20cddda173d67f4de2\transformed\emoji2-1.2.0\AndroidManifest.xml:31:17-49
+58            <meta-data
+58-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\aryan\.gradle\caches\transforms-3\025ed7849c6f43c10d9a6c1cd4d240b1\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:31:13-33:52
+59                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+59-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\aryan\.gradle\caches\transforms-3\025ed7849c6f43c10d9a6c1cd4d240b1\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:32:17-78
+60                android:value="androidx.startup" />
+60-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\aryan\.gradle\caches\transforms-3\025ed7849c6f43c10d9a6c1cd4d240b1\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:33:17-49
+61        </provider>
+62    </application>
+63
+64</manifest>
